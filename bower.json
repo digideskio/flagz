@@ -1,0 +1,16 @@
+{
+  "name": "flagz",
+  "description": "Country flags SVG sprite",
+  "main": "",
+  "authors": [
+    "Keyvan Akbary <keyvan@transferwise.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "flag",
+    "country",
+    "svg",
+    "flags"
+  ],
+  "homepage": "https://github.com/transferwise/flagz"
+}
