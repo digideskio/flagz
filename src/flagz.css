@@ -1,0 +1,7 @@
+.flag {
+    width: 42px;
+    height: 32px;
+    display: inline-block;
+    text-decoration: none;
+    background-size: 640px auto;/* Optimal size for 42x32 flags */
+}

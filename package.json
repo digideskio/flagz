@@ -1,0 +1,25 @@
+{
+  "name": "flagz",
+  "version": "0.5.0",
+  "description": "Country flags SVG sprite",
+  "scripts": {
+    "initialise": "rm -rf dist/css/ && mkdir dist/css",
+    "sprite": "svg-sprite --ccss --css --css-render-css --css-prefix=\".flag-%s\" --css-dimensions=\"\" --cs=svg/sprite.svg --dest=tmp/ flags/*.svg --css-render-css-dest=sprite.css",
+    "dist": "cat tmp/css/sprite.css src/flagz.css > dist/css/flagz.css && mv tmp/css/svg dist/css",
+    "minify": "cleancss -o dist/css/flagz.min.css dist/css/flagz.css",
+    "clean" : "rm -rf tmp",
+    "postinstall": "npm run initialise && npm run sprite && npm run dist && npm run minify && npm run clean"
+  },
+  "keywords": [
+    "flag",
+    "country",
+    "svg",
+    "flags"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "clean-css": "^3.4.17",
+    "svg-sprite": "^1.2.19"
+  }
+}
